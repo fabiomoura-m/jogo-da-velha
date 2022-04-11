@@ -101,3 +101,13 @@ function checkWinnerFor(player) {
   }
   return false;
 }
+
+function isFull() {
+  for (let i in square) {
+    if (square[i] === '') {
+      return false;
+    }
+  }
+
+  return true;
+}
